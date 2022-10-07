@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Presentacion from '../src/components/Presentacion/Presentacion';
+import NavBar from '../src/components/NavBar/Navigation';
+import About from '../src/components/About/About';
+import Skills from '../src/components/Skills/Skills';
+import Proyects from '../src/components/Proyects/Proyects';
+import Contact from '../src/components/Contact/Contact';
+import Footer from '../src/components/Footer/Footer';
+import {useLanguage} from '../src/hooks/uselanguage'
+import { useColor } from '../src/hooks/usecolor'
+
 
 function App() {
+
+  const [activeLanguage, switchLanguage] = useLanguage();
+  const [activeColor, switchColor] = useColor();
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Presentacion idioma={activeLanguage} cambiarIdioma={switchLanguage} color={activeColor} cambiarColor={switchColor} />
+      <NavBar idioma={activeLanguage} color={activeColor} />
+      <About idioma={activeLanguage} color={activeColor} />
+      <Skills idioma={activeLanguage} color={activeColor}/>
+      <Proyects idioma={activeLanguage} color={activeColor} />
+      <Contact idioma={activeLanguage} color={activeColor} />      
+      <Footer idioma={activeLanguage} color={activeColor} />
     </div>
   );
 }

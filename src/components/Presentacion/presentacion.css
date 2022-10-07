@@ -1,0 +1,210 @@
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.presentacion{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-container{
+    width: 90%;
+    max-width: 1280px;
+}
+
+.opciones-container{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+
+.color-container{
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.color-button{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/3936113.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    animation: rotate 3s linear infinite;
+
+}
+
+.color-button:hover{
+    box-shadow: 0px 0px 5px 1px rgba(250, 250, 250, 0.85);
+    /* animation: rotate 1s linear; */
+
+}
+
+
+
+.paletadecolores{
+    width: 35px;
+    height: 20px;
+}
+
+.idioma-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+
+}
+
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;  
+}
+
+
+.switchBtn input {display:none;}
+
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/800px-Flag_of_the_United_Kingdom.svg.png?20190917170937") ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 17px;
+    bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.64); 
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slide:hover{
+    box-shadow: 0px 0px 5px 1px rgba(250, 250, 250, 0.85);
+}
+
+input:checked + .slide {
+    padding-left: 0px;
+    background-image: url("https://i.pinimg.com/originals/ee/24/9d/ee249d39ed8f94265c187379ada4e7bc.jpg") ;
+}
+
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -24px;
+}
+
+
+.slide.round {
+    border-radius: 34px;
+}
+.slide.round:before {
+    border-radius: 50%;
+}
+
+.color-options{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-colors{
+    width: 313.5px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 5px; */
+}
+
+.muestras{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 8px;
+    width: 20%;
+    height: 90px;
+    justify-content: center;
+    align-items:flex-start;
+    padding-top: 8px;
+    cursor: pointer;
+    
+}
+
+.muestra-color{
+    width: 80%;
+    height: 13px;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black;     */
+}
+
+.muestras>.muestra-color:nth-child(1){
+    /* border-top: 2px solid black; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.muestras>.muestra-color:nth-child(4){
+    /* border-bottom: 2px solid black; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.titulo-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: inter;
+    height: 40vh;    
+}
+
+.titulo-presentacion p{
+    font-size: 1.25rem; 
+}
+
+.titulo-presentacion h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.presentacion p{
+    color: black;
+}
+
