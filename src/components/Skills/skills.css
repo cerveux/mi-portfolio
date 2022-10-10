@@ -1,5 +1,6 @@
 .habilidades {
   padding: 5rem 0;
+  z-index: 1;
 }
 
 .skills-container {
@@ -15,11 +16,6 @@
 
 
 
-body {
-    font-family: 'Lucida Grande', Verdana, Arial;
-    font-size: 12px;
-  }
-
   .tag-logo{
     display: flex;
     justify-content: center;
@@ -31,15 +27,15 @@ body {
 
 
     margin: 150px auto;
-    width: 500px;
-    height: 400px;
+    width: 900px;
+    height: 900px;
     /*
           
           Setting the perspective of the contents of the stage
           but not the stage itself
           
           */
-    -webkit-perspective: 800;
+    perspective: 800;
     display: flex;
   }
   
@@ -49,11 +45,12 @@ body {
     right: 0;
     margin: 0 auto;
     
-    width: 800px;
-    height: 400px;
+    width: 575px;
+    /* height: 400px; */
     /* Ensure that we're in 3D space */
-    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     transform: rotateX(30deg);
+    
     /* transform: rotate(45deg);
     transform-origin: top left; */
     /*
@@ -72,11 +69,11 @@ body {
     right: 0;
     margin: 0 auto;
 
-    width: 800px;
+    width: 575px;
     height: 400px;
     /* Ensure that we're in 3D space */
-    -webkit-transform-style: preserve-3d;
-    transform: rotateX(-15deg);
+    transform-style: preserve-3d;
+    transform: rotateX(-7deg);
     /*
           Make the whole set of rows use the x-axis spin animation
           for a duration of 7 seconds, running infinitely and linearly
@@ -93,11 +90,11 @@ body {
     right: 0;
     margin: 0 auto;
 
-    width: 800px;
+    width: 575px;
     height: 400px;
     /* Ensure that we're in 3D space */
-    -webkit-transform-style: preserve-3d;
-    transform: rotateX(-45deg);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
     /* transform: rotate(-45deg);
     transform-origin: center; */
     /*
@@ -112,11 +109,11 @@ body {
   
   .ring {
     margin: 0 auto;
-    height: 110px;
-    width: 600px;
-    -webkit-transform-style: preserve-3d;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+   /*  height: 110px;
+    width: 500px; */
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   
  /*  .ring >:nth-child(odd) {
@@ -127,69 +124,134 @@ body {
     background-color: #835A99;
   } */
   
-  .poster {
-    position: absolute;
-    left: 250px;
-    width: 100px;
-    height: 100px;
-    /* opacity: 0.7; */
-    /* background-color: aliceblue; */
-    color: rgba(0, 0, 0, 0.9);
-    -webkit-border-radius: 50%;
+  
+
+  
+
+  @keyframes y-color1 {
+    0%{
+      opacity: 0.325;
+    }
+    25%{
+      opacity: 0.1;
+    }
+    75%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0.325;
+    }
+    
+    
+    
+  }
+ 
+  @keyframes y-color2 {
+    0%{
+      opacity: 0.145;
+    }  
+    5%{
+      opacity: 0.1; 
+
+    }
+    55% {
+      opacity: 1;       
+    }
+    
+    100%{
+      opacity: 0.145;
+    } 
   }
 
-  .poster:nth-child(1){
-    
-    transform: rotateY(72deg) translateZ(350px);
+  @keyframes y-color3 {
+    0%{
+      opacity: 0.585;
+    }
+    35% {
+      opacity: 1;
+    }
+    85%{
+      opacity: 0.1;
+    }
+    100%{
+      opacity: 0.585;
+    }
+  }
 
+  @keyframes y-color4 {
+    0%{
+      opacity: 0.765;
+    }
+    15% {
+      opacity: 1;
+    }
+    55%{
+      opacity: 0.1;
+    }
+    100%{
+      opacity: 0.765;
+    }
+    
+  }
+
+  @keyframes y-color5 {
+    0%{
+      opacity: 0.855;
+    }
+    45%{
+      opacity: 0.1;
+    }
+    95%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0.855;
+    }
   }
 
   img{
-    fill: red;
     width: 75px;
+    
+  }
+
+  .poster {
+    position: absolute;
+    left: 244px;
+    width: 75px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;    
+  }
+
+  .poster:nth-child(1){
+    transform: rotateY(72deg) translateZ(350px);
+    animation-name: y-color1;
   }
   
   .poster:nth-child(2){
-    
     transform: rotateY(144deg) translateZ(350px);
+    animation-name: y-color2;
 
   }
 
   .poster:nth-child(3){
-    
     transform: rotateY(216deg) translateZ(350px);
+    animation-name: y-color3;
 
   }
 
   .poster:nth-child(4){
-    
     transform: rotateY(288deg) translateZ(350px);
+    animation-name: y-color4;
 
   }
   .poster:nth-child(5){
-    
     transform: rotateY(360deg) translateZ(350px);
+    animation-name: y-color5;
 
   }
 
-  .poster-back {
-    position: absolute;
-    left: 250px;
-    width: 50px;
-    height: 50px;
-    /* opacity: 0.7; */
-    /* background-color: aliceblue; */
-    color: rgba(0, 0, 0, 0.9);
-    -webkit-border-radius: 50%;
-  }
   
-  .poster > p {
-    font-family: inter, serif;
-    font-size: 2rem;
-    /* font-weight: bold;
-    text-align: center;
-    margin-top: 28px; */
-  }
   
   
   /*
@@ -199,13 +261,13 @@ body {
   
   #ring-1 {
     
-    -webkit-animation-name: y-spin;
-    -webkit-animation-duration: 10s;
+    animation-name: y-spin;
+    animation-duration: 10s;
   }
   
   #ring-2 {
-    -webkit-animation-name: y-spin;
-    -webkit-animation-duration: 10s;
+    animation-name: y-spin;
+    animation-duration: 10s;
   }
   
   #ring-3 {
@@ -214,205 +276,301 @@ body {
   }
   
   
-  /*
-  
-        Here we define each of the three individual animations that
-        we will be using to have our 3D rotation effect. The first
-        animation will perform a full rotation on the x-axis, we'll
-        use that on the whole set of objects. The second and third
-        animations will perform a full rotation on the y-axis in
-        opposite directions, alternating directions between rows.
-      
-        Note that you currently have to specify an intermediate step
-        for rotations even when you are using individual transformation
-        constructs.
-  
-        */
-
-    
   
   
   @keyframes y-spin {
     0% {
       -webkit-transform: rotateY(0deg);
+      
     }
     50% {
       -webkit-transform: rotateY(180deg);
+      
     }
     100% {
       -webkit-transform: rotateY(360deg);
+      
     }
   }
+
   
 
-
-  @media only screen and (max-width: 600px) {
-
-
-
-    .tag-logo{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
+  @keyframes y-spinb {
+    0% {
+      -webkit-transform: rotateY(15deg);
     }
-    
-    #stage {
-  
-  
-      margin: 150px auto;
-      width: 375px;
-      height: 400px;
-      /*
-            
-            Setting the perspective of the contents of the stage
-            but not the stage itself
-            
-            */
-      -webkit-perspective: 375;
-      display: flex;
+    50% {
+      -webkit-transform: rotateY(195deg);
     }
-    
-    #rotate-1 {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      
-      width: 375px;
-      /* Ensure that we're in 3D space */
-      -webkit-transform-style: preserve-3d;
-      transform: rotateX(30deg);
-      /* transform: rotate(45deg);
-      transform-origin: top left; */
-      /*
-            Make the whole set of rows use the x-axis spin animation
-            for a duration of 7 seconds, running infinitely and linearly
-            */
-      /* -webkit-animation-name: x-spin;
-      -webkit-animation-duration: 7s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear; */
+    100% {
+      -webkit-transform: rotateY(375deg);
     }
-  
-    #rotate-2 {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-  
-      width: 375px;
-      height: 400px;
-      /* Ensure that we're in 3D space */
-      -webkit-transform-style: preserve-3d;
-      transform: rotateX(-15deg);
-      /*
-            Make the whole set of rows use the x-axis spin animation
-            for a duration of 7 seconds, running infinitely and linearly
-            */
-      /* -webkit-animation-name: x-spin;
-      -webkit-animation-duration: 7s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear; */
-    }
-  
-    #rotate-3 {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-  
-      width: 375px;
-      height: 400px;
-      /* Ensure that we're in 3D space */
-      -webkit-transform-style: preserve-3d;
-      transform: rotateX(-45deg);
-      /* transform: rotate(-45deg);
-      transform-origin: center; */
-      /*
-            Make the whole set of rows use the x-axis spin animation
-            for a duration of 7 seconds, running infinitely and linearly
-            */
-      /* -webkit-animation-name: x-spin;
-      -webkit-animation-duration: 7s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear; */
-    }
-    
-    .ring {
-      margin: 0 auto;
-      height: 110px;
-      width: 375px;
-      -webkit-transform-style: preserve-3d;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-    }
-
-
-    .poster {
-      position: absolute;
-      left: 170px;
-      width: 45px;
-      height: 45px;
-      /* opacity: 0.7; */
-      /* background-color: aliceblue; */
-      color: rgba(0, 0, 0, 0.9);
-      -webkit-border-radius: 50%;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
-    .poster:nth-child(1){
-      
-      transform: rotateY(72deg) translateZ(150px);
-  
-    }
-  
-    img{
-      width: 45px;
-    }
-    
-    .poster:nth-child(2){
-      
-      transform: rotateY(144deg) translateZ(150px);
-  
-    }
-  
-    .poster:nth-child(3){
-      
-      transform: rotateY(216deg) translateZ(150px);
-  
-    }
-  
-    .poster:nth-child(4){
-      
-      transform: rotateY(288deg) translateZ(150px);
-  
-    }
-    .poster:nth-child(5){
-      
-      transform: rotateY(360deg) translateZ(150px);
-  
-    }
-    
   }
+
+  @keyframes y-spinb {
+    0% {
+      -webkit-transform: rotateY(30deg);
+    }
+    50% {
+      -webkit-transform: rotateY(210deg);
+    }
+    100% {
+      -webkit-transform: rotateY(390deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 705px) {
+
+  
+    
+ 
+    
+    
+      .tag-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+      
+      #stage {
+    
+    
+        margin: 1px auto;
+        width: 360px;
+        height: 360px;
+      }
+      
+      #rotate-1 {
+        width: 360px;
+
+        transform-style: preserve-3d;
+        transform: rotateX(30deg);
+        
+        
+      }
+    
+      #rotate-2 {
+        
+    
+        width: 360px;
+        height: 400px;
+        
+        transform-style: preserve-3d;
+        transform: rotateX(-7deg);
+        
+      }
+    
+      #rotate-3 {
+        
+    
+        width: 360px;
+        height: 400px;
+     
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+      }
+      
+      .poster {
+        position: absolute;
+        left: 157px;
+        width: 30px;
+        
+      }
+    
+      
+    
+     /*  @keyframes y-color1 {
+        0% {
+          opacity: 0.1;
+          background-color: none;
+          
+        }
+        50%{
+          opacity: 1;
+        }
+        
+        100% {
+          opacity: 0.1;
+          
+        }
+      }
+    
+      @keyframes y-color2 {
+        0%{
+          opacity: .88;
+        }
+        40%{
+          opacity: 0.1;
+        }
+        90% {
+          opacity: 1;      
+        }
+        100%{
+          opacity: .88;
+        }
+        
+        
+      }
+    
+      @keyframes y-color3 {
+        0%{
+          opacity: .88;
+        }
+        40%{
+          opacity: 0.1;
+        }
+        90% {
+          opacity: 1; 
+          background-color: red;     
+        }
+        100%{
+          opacity: .88;
+        }
+      } */
+    
+      img{
+        width: 40px;
+        
+      }
+
+      .poster:nth-child(1){
+        
+        transform: rotateY(72deg) translateZ(160px);
+        animation-name: y-color1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+      }
+      
+      .poster:nth-child(2){
+        
+        transform: rotateY(144deg) translateZ(160px);
+        animation-name: y-color2;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+      }
+    
+      .poster:nth-child(3){
+        
+        transform: rotateY(216deg) translateZ(160px);
+    
+      }
+    
+      .poster:nth-child(4){
+        
+        transform: rotateY(288deg) translateZ(160px);
+    
+      }
+      .poster:nth-child(5){
+        
+        transform: rotateY(360deg) translateZ(160px);
+    
+      }
+    
+      
+      
+     
+      
+      
+      
+      #ring-1 {
+        
+        animation-name: y-spin;
+        animation-duration: 10s;
+      }
+      
+      #ring-2 {
+        animation-name: y-spin;
+        animation-duration: 10s;
+      }
+      
+      #ring-3 {
+        -webkit-animation-name: y-spin;
+        -webkit-animation-duration: 10s;
+      }
+      
+      
+      
+      
+      @keyframes y-spin {
+        0% {
+          -webkit-transform: rotateY(0deg);
+          
+        }
+        50% {
+          -webkit-transform: rotateY(180deg);
+          
+        }
+        100% {
+          -webkit-transform: rotateY(360deg);
+          
+        }
+      }
+    
+      
+    
+      @keyframes y-spinb {
+        0% {
+          -webkit-transform: rotateY(15deg);
+        }
+        50% {
+          -webkit-transform: rotateY(195deg);
+        }
+        100% {
+          -webkit-transform: rotateY(375deg);
+        }
+      }
+    
+      @keyframes y-spinb {
+        0% {
+          -webkit-transform: rotateY(30deg);
+        }
+        50% {
+          -webkit-transform: rotateY(210deg);
+        }
+        100% {
+          -webkit-transform: rotateY(390deg);
+        }
+      }
+
+
+
+  }
+  
