@@ -271,8 +271,8 @@
   }
   
   #ring-3 {
-    -webkit-animation-name: y-spin;
-    -webkit-animation-duration: 10s;
+    animation-name: y-spin;
+    animation-duration: 10s;
   }
   
   
@@ -280,15 +280,15 @@
   
   @keyframes y-spin {
     0% {
-      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
       
     }
     50% {
-      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
       
     }
     100% {
-      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
       
     }
   }
@@ -297,25 +297,25 @@
 
   @keyframes y-spinb {
     0% {
-      -webkit-transform: rotateY(15deg);
+      transform: rotateY(15deg);
     }
     50% {
-      -webkit-transform: rotateY(195deg);
+      transform: rotateY(195deg);
     }
     100% {
-      -webkit-transform: rotateY(375deg);
+      transform: rotateY(375deg);
     }
   }
 
   @keyframes y-spinb {
     0% {
-      -webkit-transform: rotateY(30deg);
+      transform: rotateY(30deg);
     }
     50% {
-      -webkit-transform: rotateY(210deg);
+      transform: rotateY(210deg);
     }
     100% {
-      -webkit-transform: rotateY(390deg);
+      transform: rotateY(390deg);
     }
   }
 
@@ -522,8 +522,8 @@
       }
       
       #ring-3 {
-        -webkit-animation-name: y-spin;
-        -webkit-animation-duration: 10s;
+        animation-name: y-spin;
+        animation-duration: 10s;
       }
       
       
@@ -531,15 +531,15 @@
       
       @keyframes y-spin {
         0% {
-          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
           
         }
         50% {
-          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
           
         }
         100% {
-          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
           
         }
       }
@@ -548,25 +548,25 @@
     
       @keyframes y-spinb {
         0% {
-          -webkit-transform: rotateY(15deg);
+          transform: rotateY(15deg);
         }
         50% {
-          -webkit-transform: rotateY(195deg);
+          transform: rotateY(195deg);
         }
         100% {
-          -webkit-transform: rotateY(375deg);
+          transform: rotateY(375deg);
         }
       }
     
       @keyframes y-spinb {
         0% {
-          -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
         }
         50% {
-          -webkit-transform: rotateY(210deg);
+          transform: rotateY(210deg);
         }
         100% {
-          -webkit-transform: rotateY(390deg);
+          transform: rotateY(390deg);
         }
       }
 
