@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function useLanguage(initialValue = true){
+export function BoolHook(initialValue = true){
     const [activeLanguage, setactiveLanguage] = useState(initialValue);
 
     const switchLanguage = ()=>{activeLanguage? setactiveLanguage(!activeLanguage): setactiveLanguage(!activeLanguage)};

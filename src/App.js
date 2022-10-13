@@ -1,3 +1,4 @@
+
 import './App.css';
 import Presentacion from '../src/components/Presentacion/Presentacion';
 import NavBar from '../src/components/NavBar/Navigation';
@@ -6,13 +7,13 @@ import Skills from '../src/components/Skills/Skills';
 import Proyects from '../src/components/Proyects/Proyects';
 import Contact from '../src/components/Contact/Contact';
 import Footer from '../src/components/Footer/Footer';
-import {useLanguage} from '../src/hooks/uselanguage'
+import {BoolHook} from './hooks/BoolHook'
 import { useColor } from '../src/hooks/usecolor'
 
 
 function App() {
 
-  const [activeLanguage, switchLanguage] = useLanguage();
+  const [activeLanguage, switchLanguage] = BoolHook();
   const [activeColor, switchColor] = useColor();
 
 

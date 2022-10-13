@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import style from "./presentacion.css"
+import "./presentacion.css"
+import { BoolHook } from "../../hooks/BoolHook"
 
 
 /* import imagenpr from "my-portfolio\src\assets\finalentrega.png" */
 
 function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
-    const [estadoColor, setEstadoColor] = useState(true)
+    const [estadoColor, setEstadoColor] = BoolHook(true);
 
-    const switchVisibility = () => { estadoColor ? setEstadoColor(!estadoColor) : setEstadoColor(!estadoColor) };
+
 
 
 
@@ -19,7 +19,7 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
                 <div className="container opciones-container">
                     <div className="color-container">
-                        <div className='color-button' onClick={() => switchVisibility()} />
+                        <div className='color-button' onClick={() => setEstadoColor()} />
                     </div>
 
                     <div className="idioma-container">

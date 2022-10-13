@@ -1,4 +1,4 @@
-import style from "./about.css"
+import "./about.css"
 
 function About({idioma, color}) {
     return (

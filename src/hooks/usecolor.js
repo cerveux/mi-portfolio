@@ -8,8 +8,7 @@ export function useColor(){
         texto: "#DFF6FF"
     });
 
-    const switchColor = (props)=>{setActiveColor(props);
-console.log(activeColor);};
+    const switchColor = (props)=>{setActiveColor(props)};
 
     
 

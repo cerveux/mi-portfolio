@@ -1,4 +1,4 @@
-import styles from "./proyects.css"
+import "./proyects.css"
 
 function Proyects({ idioma, color }) {
     return (
