@@ -30,7 +30,7 @@
     margin: 200px auto 150px;
     width: 900px;
     height: 200px;
-    -webkit-perspective: 30000;/* acá hice un cambio. Si por alguna casualidad se rompe, cambiar de 800 a 20000 */
+    -webkit-perspective: 40000;/* acá hice un cambio. Si por alguna casualidad se rompe, cambiar de 800 a 20000 */
     -moz-perspective: 800;
     perspective: 800; /* acá hice un cambio. Si por alguna casualidad se rompe, borrar esta linea */
     display: flex;
