@@ -208,3 +208,16 @@ input:checked + .slide:before {
     color: black;
 }
 
+@media only screen and (max-width: 705px) {
+    .titulo-presentacion p{
+        font-size: 1rem; 
+    }
+    
+    .titulo-presentacion h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    
+}
+

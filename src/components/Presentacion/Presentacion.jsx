@@ -102,7 +102,7 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
                 <div className="container titulo-presentacion">
                     <p style={{ color: color.titulo }}>Diego Guzmán</p>
                     <h1 style={{ color: color.texto }}>
-                        {(idioma) ? ("Self-taught Front End Developer") : ("Desarrollador Web Front-End Autodidacta")}
+                        {(idioma) ? ("Self-taught Front End Developer") : ("Desarrollador Front End Autodidacta")}
                     </h1>
                 </div>
             </div>
