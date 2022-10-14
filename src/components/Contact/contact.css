@@ -1,9 +1,29 @@
 .contacto-container {
-  padding: 5rem 0;
+  padding-top: 5rem ;
+  padding-bottom: 5rem;
+}
+
+.contato-texto{
+margin-bottom: 2rem;
 }
 
 .inter {
   font-family: inter;
+}
+
+.titulo-contacto{
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contacto-parrafo{
+  max-width: 60ch;
+  font-size: 1.5rem;
+  font-family: inter, sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+ 
 }
 
 .input-styles {

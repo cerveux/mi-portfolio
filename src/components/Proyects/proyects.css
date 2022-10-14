@@ -8,3 +8,20 @@
     text-align: center;
 }
 
+.udemy-container{
+    display: flex;
+}
+
+.udemy-imagen{
+    height: 300px;
+}
+
+.oracle-container{
+    display: flex;
+}
+
+.oracle-imagen{
+    height: 300px;
+    width: 150px;
+}
+

@@ -52,16 +52,16 @@ function Contact({ idioma, color }) {
     }
     return (
         <section className="contacto" id="contact" style={{ backgroundColor: color.primario }}>
-            <div className="container text-center contacto-container" style={{ fontFamily: "Roboto" }}>
-                <div className="row justify-content-center justify-content-sm-center justify-content-lg-evenly">
-                    <div className="col-11 col-sm-10 col-md-6 col-lg-5  inter">
-                        <h2 className="titulo-contacto" style={{ color: color.titulo }}>Contacto</h2>
-                        <h5 className="pregunta-contacto" style={{ color: color.titulo }}>¿Te interesa saber cómo podemos colaborar en algún proyecto? Contáctame hoy mismo.</h5>
-                        <h5 className="mail-contacto" style={{ color: color.titulo }}>cerveux@gmail.com</h5>
-                        {/* <h5 className="tel-contacto" style={{color: color.titulo}}>
-                    <a target="_blank" rel="noreferrer" href="https://wa.link/rccy82" style={{color:"#128c7e"}} >{}</a>
-                         +54 9 (351) 746-0026
-                      </h5>  */}
+            <div className="container text-center contacto-container">
+
+
+
+                <div className="row justify-content-center justify-content-sm-center justify-content-lg-evenly prueba-row">
+                    <div className="col-10 col-sm-10 col-md-6 col-lg-5 inter contato-texto">
+                        <h2 className="titulo-contacto" style={{ color: color.titulo }}>{idioma ? "Get In Touch" : " Ponte En Contacto"}</h2>
+                        <h5 className="contacto-parrafo" style={{ color: color.texto }}>{idioma ? "You have an interesting project or idea you need help with?" : "¿Tienes un proyecto o idea interesante y necesitas ayuda?"}</h5>
+                        <h5 className="contacto-parrafo" style={{ color: color.texto }}>{idioma ? "My inbox is always open, so send a message I’ll appreciate even a simple hello." : "Mi correo siempre está disponible, así que envía un mensaje que hasta un saludo es bienvenido."}</h5>
+                        
                     </div>
 
                     <div className="col-11 col-sm-10 col-md-6 col-lg-5">
@@ -126,7 +126,7 @@ function Contact({ idioma, color }) {
                             </div>
 
                             <div className="d-grid gap-2">
-                                <button type="submit" className="btn btn-lg botton-submit" style={{ height: "60px", color: color.titulo, borderColor: color.secundario }} >{idioma ? "Contact Me" : "Contactarme"}</button>
+                                <button type="submit" className="btn btn-lg botton-submit"  style={{ height: "60px", color: color.titulo, borderColor: color.secundario }} >{idioma ? "Contact Me" : "Contactarme"}</button>
                             </div>
                         </form>
 
@@ -149,7 +149,7 @@ function Contact({ idioma, color }) {
                             </div>
                         </h5>
                         <h6 className="card-subtitle mb-3" style={{ color: color.titulo }}  >{idioma ? "Thanks for reaching out!!!" : "¡¡¡Gracias por contactarse!!!"}</h6>
-                        <p className="card-text" style={{ color: color.texto }}>{idioma ? "I`ll reach you out immediately" : "Me estaré comunicando a la brevedad."}</p>
+                        <p className="card-text" style={{ color: color.texto }}>{idioma ? "I`ll get in touch with you immediately" : "Me estaré comunicando a la brevedad."}</p>
                         <div className="d-grid gap-2">
                             <button className="btn" onClick={() => openModalMail()} style={{ color: color.titulo, borderColor: color.primario }}>{idioma ? "Close" : "Cerrar"}</button>
                         </div>
