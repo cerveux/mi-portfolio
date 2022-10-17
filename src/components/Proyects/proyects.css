@@ -1,53 +1,118 @@
-.proyectos{
-    width: 100%;
+.proyectos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 90%;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.proyects-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.own-projects{
+    min-height: 300px;
+    padding: 20px;
     display: flex;
     justify-content: center;
-}
-
-.projects-container{
-    width: 90%;
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    text-align: center;
-
 }
 
-.proyects-container{
+.learning-container {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+}
+
+.udemy-container {
+  display: flex;
+}
+
+.udemy-imagen {
+  height: 300px;
+}
+
+.oracle-container {
+  display: flex;
+}
+
+.oracle-imagen {
+  height: 300px;
+  /* width: 65px; */
+}
+
+.learning-projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project-card {
+  aspect-ratio: 16 / 9;
+  height: 200px;
+  margin: 20px 10px;
+  background-size: cover;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.project-card:hover > .blur-card {
+  visibility: visible;
+  
+}
+
+.blur-card {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  
+}
+
+.proyect-anchors{
+margin-top: 80px;
+}
+
+.proyect-link{
+    color: black;
+    margin: 15px;
     
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
+    
+}
+.proyect-link:hover{
+    color: red !important;    
 }
 
-.learning-container{
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
+.proyect-description{
+    margin-top: 45px;
+    justify-self: end;
+    font-size: 1.2rem;
 }
-
-.image-container{
-    display: flex;
-    width: 100px;
-    justify-content: center;
-}
-
-.udemy-container{
-    display: flex;
-}
-
-.udemy-imagen{
-    height: 300px;
-}
-
-.oracle-container{
-    display: flex;
-}
-
-.oracle-imagen{
-    height: 300px;
-    /* width: 65px; */
-}
-
