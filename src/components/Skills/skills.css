@@ -332,33 +332,32 @@
       
       #stage {
         margin: 1px auto;
-        width: 360px;
+        width: 330px;
       }
       
       #rotate-1 {
-        width: 360px;
+        width: 330px;
 
         
         
       }
     
       #rotate-2 {
-        width: 360px;
+        width: 330px;
         
       }
     
       #rotate-3 {
         
     
-        width: 360px;
+        width: 330px;
 
       }
       
       .poster {
         position: absolute;
-        left: 162px;
+        left: 145px;
         width: 40px;
-        
       }
     
 
@@ -370,32 +369,32 @@
 
       .poster:nth-child(1){
         
-        -webkit-transform: rotateY(72deg) translateZ(160px);
-        -moz-transform: rotateY(72deg) translateZ(160px);
-        transform: rotateY(72deg) translateZ(160px);    
+        -webkit-transform: rotateY(72deg) translateZ(150px);
+        -moz-transform: rotateY(72deg) translateZ(150px);
+        transform: rotateY(72deg) translateZ(150px);    
       }
       
       .poster:nth-child(2){
-        -webkit-transform: rotateY(144deg) translateZ(160px);
-        -moz-transform: rotateY(144deg) translateZ(160px);
-        transform: rotateY(144deg) translateZ(160px);    
+        -webkit-transform: rotateY(144deg) translateZ(150px);
+        -moz-transform: rotateY(144deg) translateZ(150px);
+        transform: rotateY(144deg) translateZ(150px);    
       }
     
       .poster:nth-child(3){
-        -webkit-transform: rotateY(216deg) translateZ(160px);
-        -moz-transform: rotateY(216deg) translateZ(160px);
-        transform: rotateY(216deg) translateZ(160px);    
+        -webkit-transform: rotateY(216deg) translateZ(150px);
+        -moz-transform: rotateY(216deg) translateZ(150px);
+        transform: rotateY(216deg) translateZ(150px);    
       }
     
       .poster:nth-child(4){
-        -webkit-transform: rotateY(288deg) translateZ(160px);
-        -moz-transform: rotateY(288deg) translateZ(160px);
-        transform: rotateY(288deg) translateZ(160px);
+        -webkit-transform: rotateY(288deg) translateZ(150px);
+        -moz-transform: rotateY(288deg) translateZ(150px);
+        transform: rotateY(288deg) translateZ(150px);
       }
       .poster:nth-child(5){
-        -webkit-transform: rotateY(360deg) translateZ(160px);
-        -moz-transform: rotateY(360deg) translateZ(160px);
-        transform: rotateY(360deg) translateZ(160px);
+        -webkit-transform: rotateY(360deg) translateZ(150px);
+        -moz-transform: rotateY(360deg) translateZ(150px);
+        transform: rotateY(360deg) translateZ(150px);
     
       }
   
