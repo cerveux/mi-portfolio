@@ -22,6 +22,22 @@
     max-width: 1280px;
 }
 
+.particulas{
+    z-index: -1;
+    width: 100%;
+    height: 120vh;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    
+
+}
+
+canvas{
+    position: absolute !important;
+}
+
 .opciones-container{
     display: flex;
     height: 10vh;

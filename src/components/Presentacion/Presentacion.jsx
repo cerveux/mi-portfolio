@@ -1,5 +1,6 @@
 import "./presentacion.css"
 import { BoolHook } from "../../hooks/BoolHook"
+import Animacion from "./Animacion";
 
 
 /* import imagenpr from "my-portfolio\src\assets\finalentrega.png" */
@@ -14,8 +15,11 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
     return (
-        <section className='presentacion' id='presentation' style={{ backgroundColor: color.primario }}>
+        <section className='presentacion' id='presentation' /* style={{ backgroundColor: color.primario }} */>
+
+            <Animacion fondo={color.primario} particulas={color.secundario}/>
             <div className='presentacion-container'>
+                
 
                 <div className="container opciones-container">
                     <div className="color-container">

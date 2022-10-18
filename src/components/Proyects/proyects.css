@@ -38,34 +38,37 @@
 
 .image-container {
   display: flex;
-  width: 100px;
+  width: 50px;
   justify-content: center;
 }
 
 .institution-container {
   display: flex;
+  align-items: center;
 }
 
 .udemy-imagen {
-  height: 300px;
+  height: 150px;
+  width: 40px;
 }
 
 
 
 .oracle-imagen {
-  height: 300px;
+  height: 150px;
+  width: 40px;
   /* width: 65px; */
 }
 
 .learning-projects {
-  width: -moz-calc(100% - 200px);
-  width: -webkit-calc(100% - 200px);
-  width: calc(100% - 200px);
+  width: -moz-calc(100% - 100px);
+  width: -webkit-calc(100% - 100px);
+  width: calc(100% - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .project-card {
@@ -75,36 +78,70 @@
   background-size: cover;
   border-radius: 15px;
   background-color: black;
-}
-
-.project-card:hover > .blur-card {
-  visibility: visible;
+  display: flex;
+  justify-content: center;
   
 }
 
+
+
+
+
+
+
 .blur-card {
-  visibility: hidden;
+    visibility: hidden;
+
+  /* display: none; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   height: 100%;
+  width: 100%;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   -moz-backdrop-filter: blur(2px);
-  
+  transition: 0.2s;
 }
 
+.project-card:hover > .blur-card {
+    visibility: visible;
+    -webkit-animation: blur-animation 0.5s;
+    -moz-animation: blur-animation 0.5s;
+    animation: blur-animation 0.6s; 
+    
+    
+  }
+
+
+  
+
 .proyect-anchors{
-margin-top: 80px;
+margin-top: 20%;
+opacity: 0;
+transition: 1s;
+
 }
+
+
+
+.project-card:hover  .proyect-anchors {
+    opacity: 100%;
+    
+    
+    
+  }
+
+
 
 .proyect-link{
     color: black;
     margin: 15px;
+    
     
     
 }
@@ -112,12 +149,80 @@ margin-top: 80px;
     color: rgba(6, 3, 173, 0.5) !important;    
 }
 
-.proyect-description{
-    margin-top: 45px;
-    justify-self: end;
-    font-size: 1.2rem;
+.bi-link-45deg{
+    height: 32px;
+    width: 32px;
+    
+    border-radius: 50%;
+    
+    
 }
 
+.bi-github{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.proyect-description{
+    opacity: 0;
+    margin-top: 10%;
+    justify-self: end;
+    font-size: 0.1rem;
+    text-shadow:
+    0.02em 0 black,
+    0 0.02em black,
+    -0.02em 0 black,
+    0 -0.02em black,
+    -0.02em -0.02em black,
+    -0.02em 0.02em black,
+    0.02em -0.02em black,
+    0.02em 0.02em black;
+    transition: 0.6s;
+}
+.project-card:hover  .proyect-description {
+    opacity: 100%;
+    font-size: 1.1rem;
+    
+    
+    
+  }
+
+@keyframes blur-animation {
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    60%{
+        width: 100%;
+        height: 100%;
+    }
+    80%{
+        width: 90%;
+        height: 90%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@keyframes anchor-animation {
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    50%{
+        width: 0%;
+        height: 0%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+
+}
 
 
 
