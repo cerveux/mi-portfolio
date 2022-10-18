@@ -19,6 +19,12 @@ const proyectos = {
             link: "https://keeper-cerveux.herokuapp.com/",
             repositorio: "https://github.com/cerveux/Keeper",
             titulo: "Keeper App"
+        },
+        {
+            imagen: "https://raw.githubusercontent.com/cerveux/to-do-list/main/screenshots/todo%20list.jpg",
+            link: "https://todo-cerveux.herokuapp.com/",
+            repositorio: "https://github.com/cerveux/to-do-list",
+            titulo: "To do List"
         }
 
     ],
@@ -28,12 +34,6 @@ const proyectos = {
             link: "https://cerveux.github.io/Challenge-ONE-Sprint-01/",
             repositorio: "https://github.com/cerveux/Challenge-ONE-Sprint-01",
             titulo: "Decodificador de Texto"
-        },
-        {
-            imagen: "https://raw.githubusercontent.com/cerveux/Challenge-ONE-Sprint-02/main/imagenes/screens/challenge-2.jpg",
-            link: "https://cerveux.github.io/Challenge-ONE-Sprint-02/",
-            repositorio: "https://github.com/cerveux/Challenge-ONE-Sprint-02",
-            titulo: "Juego del Ahorcado"
         },
         {
             imagen: "https://raw.githubusercontent.com/cerveux/Challenge-ONE-Sprint-02/main/imagenes/screens/challenge-2.jpg",

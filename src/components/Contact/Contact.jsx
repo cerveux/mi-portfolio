@@ -58,7 +58,7 @@ function Contact({ idioma, color }) {
 
                 <div className="row justify-content-center justify-content-sm-center justify-content-lg-evenly prueba-row">
                     <div className="col-10 col-sm-10 col-md-6 col-lg-5 inter contato-texto">
-                        <h2 className="titulo-contacto" style={{ color: color.titulo }}>{idioma ? "Get In Touch" : " Ponte En Contacto"}</h2>
+                        <h1 className="titulo-contacto" style={{ color: color.titulo }}>{idioma ? "Get In Touch" : " Ponte En Contacto"}</h1>
                         <h5 className="contacto-parrafo" style={{ color: color.texto }}>{idioma ? "You have an interesting project or idea you need help with?" : "¿Tienes un proyecto o idea interesante y necesitas ayuda?"}</h5>
                         <h5 className="contacto-parrafo" style={{ color: color.texto }}>{idioma ? "My inbox is always open, so send a message I’ll appreciate even a simple hello." : "Mi correo siempre está disponible, así que envía un mensaje que hasta un saludo es bienvenido."}</h5>
                         
