@@ -30,9 +30,9 @@
     margin: 200px auto 150px;
     width: 900px;
     height: 200px;
-    -webkit-perspective: 20000;/* acá hice un cambio. Si por alguna casualidad se rompe, cambiar de 800 a 20000 */
+    -webkit-perspective: 20000;
     -moz-perspective: 800;
-    perspective: 800; /* acá hice un cambio. Si por alguna casualidad se rompe, borrar esta linea */
+    perspective: 800; 
     display: flex;
   }
   
@@ -42,7 +42,7 @@
     right: 0;
     margin: 0 auto;
     width: 575px;
-    /* height: 575px; */
+
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -57,21 +57,14 @@
     right: 0;
     margin: 0 auto;
     width: 575px;
-    /* height: 575px; */
+
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: rotateX(-7deg);
     -moz-transform: rotateX(-7deg);
     transform: rotateX(-7deg);
-    /*
-          Make the whole set of rows use the x-axis spin animation
-          for a duration of 7 seconds, running infinitely and linearly
-          */
-    /* -webkit-animation-name: x-spin;
-    -webkit-animation-duration: 7s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear; */
+
   }
 
   #rotate-3 {
@@ -257,17 +250,6 @@
     animation-duration: 15s;
   }
   
- /*  #ring-2 {
-    animation-name: y-spin;
-    animation-duration: 15s;
-  }
-  
-  #ring-3 {
-    animation-name: y-spin;
-    animation-duration: 15s;
-  } */
-  
-  
   
   
   @keyframes y-spin {
@@ -316,7 +298,7 @@
 
 
 
-  @media only screen and (max-width: 705px) {
+  @media only screen and (max-width: 767px) {
 
   
     
