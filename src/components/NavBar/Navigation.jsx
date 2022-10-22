@@ -19,7 +19,7 @@ function NavBar({idioma, color}) {
             <div className="navbar-nav ms-auto">
               <a className="nav-link link-animation" style={{color: color.texto, background: borde}} href="#about">{idioma? "ABOUT": "SOBRE MI"}</a>
               <a className="nav-link link-animation" style={{color: color.texto, background: borde}} href="#skills">{idioma? "SKILLS": "HABILIDADES"}</a>
-              <a className="nav-link link-animation" style={{color: color.texto, background: borde}} href="#projects">{idioma? "PROYECTS": "PROYECTOS"}</a>
+              <a className="nav-link link-animation proyect-active" style={{color: color.texto, background: borde}} href="#projects">{idioma? "PROYECTS": "PROYECTOS"}</a>
               <a className="nav-link link-animation" style={{color: color.texto, background: borde}} href="#contact">{idioma? "CONTACT": "CONTACTO"}</a>
 
             </div>

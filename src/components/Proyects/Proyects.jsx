@@ -1,11 +1,66 @@
 import "./proyects.css"
 import proyectos from "../../assets/proyectos";
+import { useRef, useEffect, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Proyects({ idioma, color }) {
+
+    const proRef = useRef();
+    const tl = useRef();
+
+
+    
+
+    
+
+    
+
+    useLayoutEffect(()=>{
+        let ctx = gsap.context(()=>{
+            gsap.fromTo(".propio", {x: -400, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
+                scrollTrigger:{trigger: ".own-projects", start:"top 90%", end:"bottom 90% ", scrub:3}})
+
+        }, proRef)
+        return () => ctx.revert();
+        
+    }, []);
+
+    useLayoutEffect(()=>{
+        let ctx2 = gsap.context(()=>{
+            gsap.fromTo(".usock", {x: 400, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
+                scrollTrigger:{trigger: ".udemy-projects", start:"top 90%", end:"bottom 90% ", scrub:3}} )
+            gsap.fromTo(".udemy-card", {x: 400, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
+                scrollTrigger:{trigger: ".udemy-projects", start:"top 90%", end:"bottom 90% ", scrub:3}})
+
+        }, proRef)
+        return () => ctx2.revert();
+        
+    }, []);
+
+    useLayoutEffect(()=>{
+        let ctx2 = gsap.context(()=>{
+            gsap.fromTo(".osock", {x: -200, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
+                scrollTrigger:{trigger: ".ONE-projects", start:"20px 90%", end:"bottom 90% ", scrub:3}} )
+            
+            gsap.fromTo(".ONE-card", {x: -400, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
+                scrollTrigger:{trigger: ".ONE-projects", start:"top 90%", end:"bottom 90% ", scrub:3}})
+
+        }, proRef)
+        return () => ctx2.revert();
+        
+    }, []);
+
+
+
+
+
+
     return (
 
 
-        <section className="proyectos" id="projects" style={{ backgroundColor: color.secundario }}>
+        <section className="proyectos" id="projects" style={{ backgroundColor: color.secundario }} ref={proRef} >
             <div className="projects-container container">
 
 
@@ -16,7 +71,7 @@ function Proyects({ idioma, color }) {
                     <div className="own-projects">
                     {proyectos.propios.map((proyecto, index) => {
                                 return (
-                                    <div className="project-card" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
+                                    <div className="project-card propio" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
                                         <div className="blur-card">
                                             <div className="container proyect-anchors">
                                             <a className="proyect-link" rel="noreferrer" target="_blank" href={proyecto.link} >
@@ -44,11 +99,11 @@ function Proyects({ idioma, color }) {
                 <div className="container learning-container">
                     <h1 className=" inter" style={{ color: color.titulo }}>{idioma ? "Learning Projects" : "Proyectos De Aprendizaje"}</h1>
                     <div className="container institution-container">
-                        <div className="image-container"><img className="udemy-imagen" src={require("../../assets/udemy.png")} alt="" /></div>
-                        <div className="learning-projects">
+                        <div className="image-container usock"><img className="udemy-imagen" src={require("../../assets/udemy.png")} alt="" /></div>
+                        <div className="learning-projects udemy-projects">
                         {proyectos.udemy.map((proyecto, index) => {
                                 return (
-                                    <div className="project-card" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
+                                    <div className="project-card udemy-card" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
                                         <div className="blur-card">
                                             <div className="container proyect-anchors">
                                             <a className="proyect-link" rel="noreferrer" target="_blank" href={proyecto.link}>
@@ -72,13 +127,13 @@ function Proyects({ idioma, color }) {
                         </div>
                     </div>
                     <div className="container institution-container">
-                        <div className="image-container"><img className="oracle-imagen" src={require("../../assets/oracle.png")} alt="" /></div>
-                        <div className="learning-projects">
+                        <div className="image-container osock"><img className="oracle-imagen" src={require("../../assets/oracle.png")} alt="" /></div>
+                        <div className="learning-projects ONE-projects">
 
 
                             {proyectos.oracle.map((proyecto, index) => {
                                 return (
-                                    <div className="project-card" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
+                                    <div className="project-card ONE-card" style={{ backgroundImage: `url(${proyecto.imagen})` }} key={index}>
                                         <div className="blur-card">
                                             <div className="container proyect-anchors">
                                             <a className="proyect-link" rel="noreferrer" target="_blank" href={proyecto.link} >
