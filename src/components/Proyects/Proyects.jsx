@@ -28,19 +28,19 @@ function Proyects({ idioma, color }) {
     }, []);
 
     useLayoutEffect(()=>{
-        let ctx2 = gsap.context(()=>{
+        let ctx = gsap.context(()=>{
             gsap.fromTo(".usock", {x: -200, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
                 scrollTrigger:{trigger: ".udemy-projects", start:"top 90%", end:"bottom 90% ", scrub:3}} )
             gsap.fromTo(".udemy-card", {x: -400, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
                 scrollTrigger:{trigger: ".udemy-projects", start:"top 90%", end:"bottom 90% ", scrub:3}})
 
         }, proRef)
-        return () => ctx2.revert();
+        return () => ctx.revert();
         
     }, []);
 
     useLayoutEffect(()=>{
-        let ctx2 = gsap.context(()=>{
+        let ctx = gsap.context(()=>{
             gsap.fromTo(".osock", {x: -200, opacity: 0},  {x:0, opacity: 1, stagger:0.2,
                 scrollTrigger:{trigger: ".ONE-projects", start:"20px 90%", end:"bottom 90% ", scrub:3}} )
             
@@ -48,7 +48,7 @@ function Proyects({ idioma, color }) {
                 scrollTrigger:{trigger: ".ONE-projects", start:"top 90%", end:"bottom 90% ", scrub:3}})
 
         }, proRef)
-        return () => ctx2.revert();
+        return () => ctx.revert();
         
     }, []);
 
