@@ -72,15 +72,15 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
                         <div className='muestras' onClick={() => cambiarColor({
-                            primario: "#937DC2",
-                            secundario: "#C689C6",
-                            titulo: "#FFABE1",
-                            texto: "#FFE6F7"
+                            primario: "#000000",
+                            secundario: "#52057B",
+                            titulo: "#892CDC",
+                            texto: "#BC6FF1"
                         })}>
-                            <div className='muestra-color' style={{ backgroundColor: "#937DC2" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#C689C6" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#FFABE1" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#FFE6F7" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#000000" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#52057B" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#892CDC" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#BC6FF1" }}></div>
                             <p>Violet</p>
 
                         </div>
@@ -103,15 +103,15 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
                         <div className='muestras' onClick={() => cambiarColor({
-                            primario: "#937DC2",
-                            secundario: "#C689C6",
-                            titulo: "#FFABE1",
-                            texto: "#FFE6F7"
+                            primario: "#A7FF83",
+                            secundario: "#17B978",
+                            titulo: "#086972",
+                            texto: "#071A52"
                         })}>
-                            <div className='muestra-color' style={{ backgroundColor: "#937DC2" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#C689C6" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#FFABE1" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#FFE6F7" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#A7FF83" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#17B978" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#086972" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#071A52" }}></div>
                             <p>Violet</p>
 
                         </div>
@@ -119,15 +119,15 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
                         <div className='muestras' onClick={() => cambiarColor({
-                            primario: "#E23E57",
-                            secundario: "#88304E",
-                            titulo: "#522546",
-                            texto: "#311D3F"
+                            primario: "#2F5D62",
+                            secundario: "#5E8B7E",
+                            titulo: "#A7C4BC",
+                            texto: "#DFEEEA"
                         })}>
-                            <div className='muestra-color' style={{ backgroundColor: "#E23E57" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#88304E" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#522546" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#311D3F" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#2F5D62" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#5E8B7E" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#A7C4BC" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#DFEEEA" }}></div>
                             <p>Light</p>
 
                         </div>
@@ -136,15 +136,15 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
                         <div className='muestras' onClick={() => cambiarColor({
-                            primario: "#000000",
-                            secundario: "#52057B",
-                            titulo: "#892CDC",
-                            texto: "#BC6FF1"
+                            primario: "#28DF99",
+                            secundario: "#99F3BD",
+                            titulo: "#D2F6C5",
+                            texto: "#F6F7D4"
                         })}>
-                            <div className='muestra-color' style={{ backgroundColor: "#000000" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#52057B" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#892CDC" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#BC6FF1" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#28DF99" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#99F3BD" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#D2F6C5" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#F6F7D4" }}></div>
                             <p>Violet</p>
 
                         </div>
@@ -152,15 +152,15 @@ function Presentacion({ idioma, cambiarIdioma, color, cambiarColor }) {
 
 
                         <div className='muestras' onClick={() => cambiarColor({
-                            primario: "#440A67",
-                            secundario: "#93329E",
-                            titulo: "#B4AEE8",
-                            texto: "#FFE3FE"
+                            primario: "#36622B",
+                            secundario: "#729D39",
+                            titulo: "#C6E377",
+                            texto: "#FBFAD3"
                         })}>
-                            <div className='muestra-color' style={{ backgroundColor: "#440A67" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#93329E" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#B4AEE8" }}></div>
-                            <div className='muestra-color' style={{ backgroundColor: "#FFE3FE" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#36622B" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#729D39" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#C6E377" }}></div>
+                            <div className='muestra-color' style={{ backgroundColor: "#FBFAD3" }}></div>
                             <p>Grass</p>
 
                         </div>
