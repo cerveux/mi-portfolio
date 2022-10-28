@@ -7,8 +7,10 @@ import Skills from '../src/components/Skills/Skills';
 import Proyects from '../src/components/Proyects/Proyects';
 import Contact from '../src/components/Contact/Contact';
 import Footer from '../src/components/Footer/Footer';
-import {BoolHook} from './hooks/BoolHook'
-import { useColor } from '../src/hooks/usecolor'
+import {BoolHook} from './hooks/BoolHook';
+import { useColor } from '../src/hooks/usecolor';
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Proyects idioma={activeLanguage} color={activeColor} />
       <Contact idioma={activeLanguage} color={activeColor} />      
       <Footer idioma={activeLanguage} color={activeColor} />
+      <Analytics />
+
     </div>
   );
 }

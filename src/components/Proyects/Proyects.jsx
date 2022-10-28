@@ -1,6 +1,6 @@
 import "./proyects.css"
 import proyectos from "../../assets/proyectos";
-import { useRef, useEffect, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Proyects({ idioma, color }) {
 
     const proRef = useRef();
-    const tl = useRef();
+    
 
 
     
