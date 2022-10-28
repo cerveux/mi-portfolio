@@ -16,7 +16,7 @@ const proyectos = {
     udemy: [
         {
             imagen: "https://raw.githubusercontent.com/cerveux/Keeper/main/screenshot/screenshot.jpg",
-            link: "https://keeper-cerveux.herokuapp.com/",
+            link: "https://keeper-vercel.vercel.app/",
             repositorio: "https://github.com/cerveux/Keeper",
             titulo: "Keeper App"
         },
