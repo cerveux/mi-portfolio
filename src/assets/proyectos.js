@@ -8,7 +8,7 @@ const proyectos = {
         },
         {
             imagen: "https://raw.githubusercontent.com/cerveux/melirestful/main/screenshot/screenshot-1.jpg",
-            link: "",
+            link: "https://cerveux-meli.herokuapp.com/",
             repositorio: "",
             titulo: "Práctica API MELI"
         }
