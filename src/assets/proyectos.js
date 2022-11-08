@@ -8,7 +8,7 @@ const proyectos = {
         },
         {
             imagen: "https://raw.githubusercontent.com/cerveux/melirestful/main/screenshot/screenshot-1.jpg",
-            link: "https://meli-restful-api.herokuapp.com/",
+            link: "",
             repositorio: "",
             titulo: "Práctica API MELI"
         }
@@ -22,7 +22,7 @@ const proyectos = {
         },
         {
             imagen: "https://raw.githubusercontent.com/cerveux/to-do-list/main/screenshots/todo%20list.jpg",
-            link: "https://to-do-cerveux.herokuapp.com/",
+            link: "https://cerveuxs-todo.herokuapp.com/",
             repositorio: "https://github.com/cerveux/to-do-list",
             titulo: "To do List"
         }
