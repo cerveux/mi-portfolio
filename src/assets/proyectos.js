@@ -11,6 +11,12 @@ const proyectos = {
             link: "https://meli-restful-front.vercel.app",
             repositorio: "https://github.com/cerveux/melirestful",
             titulo: "Práctica API MELI"
+        },
+        {
+            imagen: "https://raw.githubusercontent.com/cerveux/cotizador/main/src/assets/screenshot/Dispersion.jpg",
+            link: "https://dispersion.vercel.app/",
+            repositorio: "https://github.com/No-Country/C8-64-FT-MERN",
+            titulo: "Proyecto del grupo C8-64"
         }
     ],
     udemy: [
