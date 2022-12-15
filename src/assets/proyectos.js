@@ -16,7 +16,7 @@ const proyectos = {
             imagen: "https://raw.githubusercontent.com/cerveux/cotizador/main/src/assets/screenshot/Dispersion.jpg",
             link: "https://dispersion.vercel.app/",
             repositorio: "https://github.com/No-Country/C8-64-FT-MERN",
-            titulo: "Proyecto del grupo C8-64"
+            titulo: "Proyecto No-Country"
         }
     ],
     udemy: [
