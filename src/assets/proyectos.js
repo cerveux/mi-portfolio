@@ -16,8 +16,14 @@ const proyectos = {
             imagen: "https://raw.githubusercontent.com/cerveux/cotizador/main/src/assets/screenshot/Dispersion.jpg",
             link: "https://dispersion.vercel.app/",
             repositorio: "https://github.com/No-Country/C8-64-FT-MERN",
-            titulo: "Proyecto No-Country"
+            titulo: "Proyecto C8 No-Country"
+        },{
+            imagen: "https://raw.githubusercontent.com/cerveux/contrata/main/src/assets/screenshot.jpg",
+            link: "https://contrata.vercel.app/",
+            repositorio: "https://github.com/No-Country/S6-15-M-MERN",
+            titulo: "Proyecto S6 No-Country"
         }
+
     ],
     udemy: [
         {
